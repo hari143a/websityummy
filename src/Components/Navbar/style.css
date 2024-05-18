@@ -1,0 +1,68 @@
+/* Desktop styles */
+.navbar-brand {
+    font-size: 40px !important;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: 12%;
+}
+
+.navbar {
+    padding: 20px !important;
+}
+
+a {
+    font-size: larger !important;
+    font-weight: bold !important;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #7f7f90;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: red;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 0; /* Reset margin for mobile */
+    }
+
+    .navbar-collapse {
+        background-color: white; /* Change background color for better visibility */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .navbar-toggler {
+        border: none; /* Remove border from toggler */
+    }
+
+    .navbar-nav .nav-link {
+        display: block; /* Display links as block elements for mobile */
+        padding: 10px 0; /* Add padding to links for better spacing */
+    }
+}

@@ -1,0 +1,94 @@
+    
+    
+  .section-bg {
+    background-color: #eee;
+    margin-top: 50px;
+  }
+.hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    padding: 100px 0 60px 0;
+  }
+  
+  .hero h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-family: var(--font-primary) !important;
+  }
+  
+  .hero h2 span {
+    color: var(--color-primary);
+  }
+  
+  .hero p {
+    color: #4f4f5a;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn-book-a-table {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+    text-decoration: none;
+  }
+  
+  .hero .btn-book-a-table:hover {
+    background: rgba(206, 18, 18, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+  }
+  
+  .hero .btn-watch-video {
+    font-size: 18px !important;
+    transition: 0.5s;
+    margin-left: 25px !important;
+    text-decoration: none;
+    color: var(--font-secondary);
+    font-weight: 500 !important;
+  }
+  
+  .hero .btn-watch-video .i {
+    color: var(--color-primary);
+    font-size: 35px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+  }
+  
+  .hero .btn-watch-video:hover {
+    color: var(--color-primary);
+  }
+  
+  .hero .btn-watch-video:hover i {
+    color: rgba(206, 18, 18, 0.8);
+  }
+  
+  /* Add hover effect for the "Watch Video" button */
+  .hero .btn-watch-video:hover {
+    color: rgba(206, 18, 18, 0.8);
+  }
+  
+  .hero .btn-watch-video:hover i {
+    color: rgba(206, 18, 18, 0.8);
+  }
+  @media (max-width: 640px) {
+    .hero h2 {
+      font-size: 36px;
+    }
+  
+    .hero .btn-get-started,
+    .hero .btn-watch-video {
+      font-size: 14px;
+    }
+  }
